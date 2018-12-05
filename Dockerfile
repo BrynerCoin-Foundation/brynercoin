@@ -25,7 +25,7 @@ RUN apt-get install -y libzmq3-dev
 # build brynercoin source
 RUN ./autogen.sh
 RUN ./configure
-RUN make
+RUN make -j5
 RUN make install
 
 # open service port
