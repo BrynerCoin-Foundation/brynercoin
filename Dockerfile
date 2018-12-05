@@ -24,8 +24,15 @@ RUN apt-get install -y libzmq3-dev
 
 # build brynercoin source
 RUN ./autogen.sh
-RUN ./configure
-RUN make -j5
+RUN ./configure \
+    --disable-dependency-tracking \
+    --disable-wallet \
+    --disable-tests \
+    --disable-gui-tests \
+    --disable-bench \
+    --disable-man \
+    --with-gui=no
+RUN make -j3
 RUN make install
 
 # open service port
