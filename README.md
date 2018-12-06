@@ -1,79 +1,63 @@
-BrynerCoin Core integration/staging tree
+BrynerCoin Core
 =====================================
 
-[![Build Status](https://travis-ci.org/brynercoin-project/brynercoin.svg?branch=master)](https://travis-ci.org/brynercoin-project/brynercoin)
+[![Build Status](https://travis-ci.org/BrynerCoin-Foundation/brynercoin.svg?branch=brynercoin)](https://travis-ci.org/BrynerCoin-Foundation/brynercoin)
 
-https://brynercoin.org
+https://bryner.tech
 
 What is BrynerCoin?
 ----------------
 
-BrynerCoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. BrynerCoin uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. BrynerCoin Core is the name of open source
-software which enables the use of this currency.
+BrynerCoin is an immature digital currency based on the Litecoin source code.
+Brynercoin allows for instant digital payments to anyone, anywhere in the world,
+using peer-to-peer technology to operate with no central authority. BrynerCoin
+Core is the name of the open source software which enables the use of this
+currency.
+
+BrynerCoin's value is not directly tied to any fiat currency or other resource;
+no matter where you are in the world, 1 BRY will always be worth 1 BRY. This
+fundamental principle allows for easy transactions between "the boys." For
+example, admission to the Minecraft server costs 50 BRY. Using valueless
+blockchain technology allows for large-brained transactions between any two of
+"the boys." 
 
 For more information, as well as an immediately useable, binary version of
-the BrynerCoin Core software, see [https://brynercoin.org](https://brynercoin.org).
+the BrynerCoin Core software, see
+[https://downloads.bryner.tech](https://downloads.bryner.tech).
 
 License
 -------
 
-BrynerCoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
+BrynerCoin Core is released under the terms of the MIT license. See
+[COPYING](COPYING) for more information, or see
+https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/brynercoin-project/brynercoin/tags) are created
-regularly to indicate new official, stable release versions of BrynerCoin Core.
+The BrynerCoin backend is developed and maintained entirely by 
+[Ralph Drake](https://github.com/RalphORama), who has no idea what he's doing.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-The developer [mailing list](https://groups.google.com/forum/#!forum/brynercoin-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
-
-Developer IRC can be found on Freenode at #brynercoin-dev.
 
 Testing
 -------
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
+There is currently no automated or manual testing for BrynerCoin. No one should
+use this currency in any official or unofficial capacity.
 
 ### Automated Testing
 
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
-
-There are also [regression and integration tests](/test), written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
-
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
+None.
 
 ### Manual Quality Assurance (QA) Testing
 
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
+None.
 
 Translations
 ------------
 
-We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to BrynerCoin periodically.
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+Any translations cannot be verified as the lead dev only speaks English and
+does not possess the mental capacity to learn a second language. Because of
+this issue, the development team will accept any an all pull requests
+relating to translation, providing they don't look to bad in Google Translate.
