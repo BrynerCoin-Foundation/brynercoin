@@ -2,6 +2,7 @@ BrynerCoin Core
 =====================================
 
 [![Build Status](https://travis-ci.org/BrynerCoin-Foundation/brynercoin.svg?branch=brynercoin)](https://travis-ci.org/BrynerCoin-Foundation/brynercoin)
+[![Docker Build Status](https://img.shields.io/docker/build/ralphorama/brynercoin.svg)](https://hub.docker.com/r/ralphorama/brynercoin/builds/)
 
 https://bryner.tech
 
