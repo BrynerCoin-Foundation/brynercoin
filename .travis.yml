@@ -86,3 +86,12 @@ script:
 after_script:
     - echo $TRAVIS_COMMIT_RANGE
     - echo $TRAVIS_COMMIT_LOG
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: /downloads
+  repo: BrynerCoin-Foundation/BrynerCoin-Foundation.github.io
+  target-branch: master
